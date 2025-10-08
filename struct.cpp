@@ -9,7 +9,7 @@ struct student{
 
 int main(){
     student s1;
-
+    
     s1.roll=101;
     s1.name="dhanu";
     s1.marks=94.8;

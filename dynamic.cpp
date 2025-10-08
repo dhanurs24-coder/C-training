@@ -8,6 +8,7 @@ int main(){
     cout<<"value "<<*p<<endl;
     cout<<"Address: "<<p<<endl;
 
+
     delete p;
 
     cout<<"value "<<*p<<endl;

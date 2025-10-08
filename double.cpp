@@ -10,7 +10,7 @@ int main(){
     dl.push_back(20);
     dl.push_front(23);
 
-    auto it = dl.begin();          //auto=Don't need to specify th value
+    auto it = dl.begin();          //auto=Don't need to specify the value
     advance(it,1);
     dl.insert(it,15);
     
