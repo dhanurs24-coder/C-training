@@ -1,0 +1,12 @@
+GRAPH:-
+
+Collection of vertex and edge 
+         Two types of graph:
+            Directed graph: edges have direction
+            Undirected graph: edges do not have direction
+All trees are graphs, but not all graphs are trees.
+
+Two common ways to represent a graph:
+   1. Adjacency Matrix
+
+   2. Adjacency List

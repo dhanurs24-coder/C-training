@@ -1,0 +1,44 @@
+Greedy Algorithm Explanation
+   A greedy algorithm is a straightforward approach to solving optimization problems by making a series of choices, each of which looks best at the moment. 
+   The main idea is to choose the option that seems to offer the most immediate benefit, without worrying about the long-term consequences.
+
+Graph Algorithm
+    > Kruskal's Algorithm
+    > Prim's Algorithm
+    > Dijkstra's Algorithm
+    > Huffman Coding
+    > Activity Selection Problem
+    > Fractional Knapsack Problem
+    > Job Scheduling with Deadlines
+    > Coin Change Problem (for certain denominations)
+    > Set Cover Problem (approximation)
+    > Traveling Salesman Problem (approximation)
+    > Minimum Spanning Tree
+    > Shortest Path in a Graph
+    > Maximum Bipartite Matching (Hungarian Algorithm)
+    > Network Flow Problems (Edmonds-Karp Algorithm)
+    > Interval Scheduling Maximization
+    > Task Scheduling with Deadlines
+    > Optimal Merge Pattern
+
+-> Activity Selection Problem
+    you are given N Activity , each activity has a start time and end time.
+    A single person can only work on a single activity at a time.
+    The goal is to select the maximum number of activities that a person can perform without overlapping.
+
+    Example:
+        Input: N = 6, activities = {(1, 3), (2, 4), (3, 5), (0, 6), (5, 7), (8, 9)}
+        Output: Maximum number of activities = 4
+        Explanation: The selected activities are (1, 3), (3, 5), (5, 7), and (8, 9).
+    
+    Greedy approach:
+        1.Sort the activities Based on their finish time.
+        2.Select the first activity from the sorted list and add Print it.
+        3.For the remaining activities in the sorted array, do the following:
+            If the strat time of the next activity is greater than or equal to the finish time of 
+            the previously selected activity, select it and print it.
+        4.Repeat step 3 until all activities are considered.
+     
+ 
+    Time Complexity: O(N log N) due to sorting the activities.
+    Space Complexity: O(1) if we don't consider the input storage.

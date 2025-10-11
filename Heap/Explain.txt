@@ -1,0 +1,47 @@
+HEAP
+ -> Complete Binary tree
+ -> Max heap 
+ -> Min heap
+Heap sort
+    -> Time complexity O(n log n)
+    -> Space complexity O(1)
+
+    Formula to find parent and child
+             i=index of parent (0)
+        -> Parent = (i-1)/2
+        -> Left child = 2*i + 1        
+        -> Right child = 2*i + 2
+ arr = [4,10,3,5,1]   = i =[0, 1, 2, 3, 4]
+ 
+         4(0)
+       /      \                        2*0+1=1  2*0+2=2
+     10(1)    3(2)
+    /   \     
+  5(3)  1(4)                           2*1+1=3  2*1+2=4
+
+  sorted array = [1,3,4,5,10]
+  max heap = [10,5,3,4,1]
+  min heap = [1,4,3,10,5]
+    1. Build max heap from array
+    2. Swap root with last element
+    3. Reduce heap size by 1
+    4. Heapify the root
+    5. Repeat step 2-4 until heap size is greater than 1
+    6. Return sorted array
+    7. Heapify function to maintain heap property
+        -> If parent is less than child, swap them
+        -> Recursively heapify the affected subtree
+    8. Build max heap function to build max heap from array
+    9. Time complexity of building max heap is O(n)
+    10. Overall time complexity of heap sort is O(n log n)
+    11. Space complexity is O(1) as we are sorting in place
+    12. Heap sort is not a stable sort
+    13. Heap sort is an in-place sorting algorithm
+    14. Heap sort is not a comparison sort
+    15. Heap sort is not a recursive algorithm
+    16. Heap sort is not a divide and conquer algorithm
+    17. Heap sort is not a stable sort
+    18. Heap sort is not a parallel algorithm
+    19. Heap sort is not a distributed algorithm
+    20. Heap sort is not a cache efficient algorithm
+    21. Heap sort is not a adaptive algorithm

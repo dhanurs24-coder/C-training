@@ -1,0 +1,32 @@
+> Tree is non linear data structure that store data in herarchical manner.
+> It is made up of nodes and edges.
+> The topmost node is called root node.
+> Each node contains a value and a list of pointers to other nodes (children).
+> A node that has children is called an internal node, while a node that does not have children is called a leaf node.
+> Each child node has exactly one parent node, except for the root node, which has no parent.
+> The height of a tree is the length of the longest path from the root to a leaf.
+> Common types of trees include binary trees, binary search trees, AVL trees, and heaps.
+> Trees are used in various applications such as representing hierarchical data (e.g., file systems, organizational structures), searching and sorting algorithms (e.g., binary search trees), and in computer graphics (e.g., scene graphs).
+> 3 ways to travese a tree:
+    -> Inorder (Left, Root, Right)
+    -> Preorder (Root, Left, Right)
+    -> Postorder (Left, Right, Root)
+
+> Binary search tree(BST)
+
+> A binary search tree is a type of binary tree that maintains a specific order among its elements.
+    -> 1.it should be a binary tree.
+    -> 2.The left subtree of a node contains only nodes with values less than the node's value.
+    -> 3.The right subtree of a node contains only nodes with values greater than the node's value.
+    -> 4.Both the left and right subtrees must also be binary search trees.
+    -> 5.There must be no duplicate nodes.
+> time complexity of BST:
+    -> Average case: O(log n) for search, insertion, and deletion operations.
+    -> Worst case: O(n) for search, insertion, and deletion operations (occurs when the tree becomes unbalanced, resembling a linked list). 
+
+> deleteion in BST:
+> There are three cases to consider when deleting a node from a binary search tree:
+    -> Case 1: The node to be deleted is a leaf node (has no children). In this case, simply remove the node from the tree.
+    -> Case 2: The node to be deleted has one child. In this case, remove the node and replace it with its child.
+    -> Case 3: The node to be deleted has two children. In this case, find the node's in-order successor (the smallest node in its right subtree) or in-order predecessor (the largest node in its left subtree), copy its value to the node to be deleted, and then delete the in-order successor or predecessor (which will now fall into either case 1 or case 2).
+    -> to delete a root node we can use Inorder successor or Inorder predecessor.

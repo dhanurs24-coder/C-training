@@ -1,0 +1,11 @@
+Hash map
+unordered_map in C++
+It is a key value pair data structure.
+It is used to store data in key value pair format.
+Key should be unique.
+
+chaining method
+It is used to handle collision in hashmap.
+It is used to store multiple values in a single index of hashmap.
+It is used to store data in linked list format.
+Time complexity: O(1) for insertion, deletion and search.
